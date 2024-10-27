@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Social Media Assistant",
+    "version": "1.0.0",
+    "description": "A Chrome extension for social media assistance",
+    "action": {
+      "default_popup": "public/popup.html"
+    },
+    "permissions": [
+      "activeTab"
+    ]
+}
