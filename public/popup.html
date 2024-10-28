@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social Media Personalization Assistant</title>
+    <title>Social Media Assistant</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="root"></div>
+    <div class="container">
+        <h1>Social Media Assistant</h1>
+        
+        <!-- Platform Selection -->
+        <div class="platform-select">
+            <label for="platform">Select Platform:</label>
+            <select id="platform">
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+            </select>
+        </div>
+
+        <!-- Content Input -->
+        <div class="content-input">
+            <label for="post-content">Your Content:</label>
+            <textarea id="post-content" placeholder="Type your post content here..."></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="analyze-btn">Analyze Content</button>
+            <button id="improve-btn">Suggest Improvements</button>
+            <button id="hashtag-btn">Generate Hashtags</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results" id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+    <script src="../src/popup.js"></script>
 </body>
 </html>

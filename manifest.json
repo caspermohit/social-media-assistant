@@ -7,6 +7,25 @@
       "default_popup": "public/popup.html"
     },
     "permissions": [
-      "activeTab"
-    ]
+      "storage",
+      "activeTab",
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+        "*://*.twitter.com/*",
+        "*://*.facebook.com/*",
+        "*://*.instagram.com/*",
+        "*://*.linkedin.com/*"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "*://*.twitter.com/*",
+            "*://*.facebook.com/*",
+            "*://*.linkedin.com/*",
+            "*://*.instagram.com/*"
+        ],
+        "js": ["content.js"]
+       
+    }]
 }
