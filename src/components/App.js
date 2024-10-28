@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(null);  // Fix the incomplete initialization
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
